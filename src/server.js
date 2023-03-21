@@ -12,10 +12,12 @@ console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
 const contactEmail = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.upv.com",
+  port: 465,
+  secure: true,
   auth: {
-    user: "daniriaatuu@gmail.com",
-    password: "",
+    user: "rontu@posgrado.upv.es",
+    password: "Rongjitu9288@",
   },
 });
 

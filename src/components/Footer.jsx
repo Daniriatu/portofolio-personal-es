@@ -7,9 +7,9 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 export const Footer = () => {
   return (
     <footer className="footer">
-      <Container>
+      <Container className="pt-5">
         <Row>
-          <MailchimpForm></MailchimpForm>
+          {/* <MailchimpForm></MailchimpForm> */}
           <Col sm={6}>
             <img src={logo} alt="Logo" />
           </Col>
