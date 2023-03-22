@@ -72,9 +72,11 @@ export const Banner = () => {
                     inventore quam at saepe nesciunt voluptates nobis
                     blanditiis, sunt ut ad qui similique labore doloremque.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let's connect <ArrowRightCircle />
-                  </button>
+                  <a href="#connect" style={{ textDecoration: "none" }}>
+                    <button onClick={() => console.log("connect")}>
+                      Let's connect <ArrowRightCircle />
+                    </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>

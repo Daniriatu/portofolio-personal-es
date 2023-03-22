@@ -1,4 +1,3 @@
-import { async } from "q";
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
@@ -26,15 +25,19 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
+    let response = await fetch(
+      "https://magical-mermaid-b3a9ba.netlify.app/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "Application/json;charset=utf-8",
+        },
+        body: JSON.stringify(formDetails),
+      }
+    );
     setButtonText("Send");
-    let result = response.json();
+    let result = await response.json();
+    console.log(result.code);
     setFormDetails(formInitialDetails);
     if (result.code === 200) {
       setStatus({ success: true, message: "Message sent successfully" });
@@ -103,9 +106,7 @@ export const Contact = () => {
                 {status.message && (
                   <Col>
                     <p
-                      className={
-                        status.success === false ? "danger" : "success"
-                      }
+                      className={status.success === true ? "success" : "danger"}
                     >
                       {status.message}
                     </p>
