@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import navIcon1 from "../assets/img/linkedin.svg";
 import navIcon2 from "../assets/img/github.svg";
+import language from "../assets/img/language.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -59,7 +60,7 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("projects")}
             >
-              Projects
+              About Me
             </Nav.Link>
           </Nav>
 
@@ -78,6 +79,9 @@ export const NavBar = () => {
                 rel="noopener noreferrer"
               >
                 <img src={navIcon2} alt="" />
+              </a>
+              <a href="https://github.com/Daniriatu">
+                <img src={language} alt="" />
               </a>
             </div>
 

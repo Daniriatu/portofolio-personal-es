@@ -1,42 +1,32 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import { Education } from "./Education";
+import { Language } from "./Language";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/rickandmorty.png";
+import projImg2 from "../assets/img/pokemon.png";
+import projImg3 from "../assets/img/blog.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      link: "https://github.com/Daniriatu/RickAndMorty.git",
+      title: "Rick And Morty",
+      description: "A website about characters in the show",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      link: "https://github.com/Daniriatu/PokemonGame.git",
+      title: "Guess Pokemon Game",
+      description: "Come and see how much pokemons you know",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      link: "https://github.com/Daniriatu/Small-Blog.git",
+      title: "Personal Blog",
+      description: "A blog system made with Vue and Express",
       imgUrl: projImg3,
     },
   ];
@@ -53,12 +43,11 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__bounce" : ""
                   }
                 >
-                  <h2>Projects</h2>
+                  <h2>About Me</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta, minima corporis excepturi et repellat natus
-                    temporibus error dolorum! Odit consequatur ullam laudantium
-                    minima deleniti vel ad nisi voluptatum nostrum eligendi!
+                    Want to get more information and know me better? Stay here
+                    and make some clicks, maybe you can find something
+                    interesting.
                   </p>
                 </div>
               )}
@@ -70,13 +59,13 @@ export const Projects = () => {
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab1</Nav.Link>
+                  <Nav.Link eventKey="first">Works</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab2</Nav.Link>
+                  <Nav.Link eventKey="second">Education</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Tab3</Nav.Link>
+                  <Nav.Link eventKey="third">Languages</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -88,20 +77,10 @@ export const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque quam, quod neque provident velit, rem explicabo
-                    excepturi id illo molestiae blanditiis, eligendi dicta
-                    officiis asperiores delectus quasi inventore debitis quo.
-                  </p>
+                  <Education />
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque quam, quod neque provident velit, rem explicabo
-                    excepturi id illo molestiae blanditiis, eligendi dicta
-                    officiis asperiores delectus quasi inventore debitis quo.
-                  </p>
+                  <Language />
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>

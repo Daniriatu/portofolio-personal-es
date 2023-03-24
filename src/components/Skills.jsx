@@ -40,10 +40,8 @@ export const Skills = () => {
             <div className="skill-box">
               <h2>Skills</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                assumenda, libero nam sunt officiis esse blanditiis magni
-                recusandae saepe, repellendus quo ex incidunt suscipit dicta ab
-                fuga aperiam? Neque, atque.
+                Here are the 8 skills I'm familiar with, and I will keep adding
+                more into the list.
               </p>
 
               <Carousel

@@ -67,10 +67,11 @@ export const Banner = () => {
                     {`Hi! I'm Rongji. `} <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eveniet cum adipisci, laboriosam, iste reprehenderit vero
-                    inventore quam at saepe nesciunt voluptates nobis
-                    blanditiis, sunt ut ad qui similique labore doloremque.
+                    I´m a person who´s passionate about the tech world.
+                    <br></br>I´m always open to explore new technology and new
+                    field.
+                    <br></br>
+                    Technology changed the world, non-stop learning changed me.
                   </p>
                   <a href="#connect" style={{ textDecoration: "none" }}>
                     <button onClick={() => console.log("connect")}>

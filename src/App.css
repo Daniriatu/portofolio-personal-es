@@ -376,7 +376,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 17px 0;
   color: #fff;
   width: 100%;
-  font-size: 17px;
+  font-size: 1rem;
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
@@ -418,6 +418,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 .proj-imgbx::before {
   content: "";
@@ -450,12 +451,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  color: #FFFFFF;
 }
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+  color: #FFFFFF;
 }
 .background-image-right {
   top: 20%;
@@ -464,6 +467,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+/************ Education Css ************/
+
+.education-slider {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+
+.education-slider img {
+  width: 50%;
+}
+
+.education-slider .estudio {
+  width: 17.7%;
+}
+
+.education-slider span {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+
+/************ Language Css ************/
+
+.language-slider {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.language-slider img {
+  width: 40%;
 }
 
 /************ Contact Css ************/
