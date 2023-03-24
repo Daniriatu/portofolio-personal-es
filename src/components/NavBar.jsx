@@ -80,7 +80,7 @@ export const NavBar = () => {
               >
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="https://github.com/Daniriatu">
+              <a href="#">
                 <img src={language} alt="" />
               </a>
             </div>
