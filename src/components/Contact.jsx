@@ -12,7 +12,7 @@ export const Contact = () => {
   };
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("Send");
+  const [buttonText, setButtonText] = useState("Enviar");
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -24,7 +24,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText("Sending...");
+    setButtonText("Enviando...");
     let response = await fetch(
       "https://magical-mermaid-b3a9ba.netlify.app/contact",
       {
@@ -35,7 +35,7 @@ export const Contact = () => {
         body: JSON.stringify(formDetails),
       }
     );
-    setButtonText("Send");
+    setButtonText("Enviar");
     let result = await response.json();
     console.log(result.code);
     setFormDetails(formInitialDetails);
@@ -57,14 +57,14 @@ export const Contact = () => {
             <img src={contactImg} alt="Contact Me" />
           </Col>
           <Col md={6}>
-            <h2>Get In Touch</h2>
+            <h2>Conectémonos</h2>
             <form onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">
                   <input
                     type="text"
                     value={formDetails.firstName}
-                    placeholder="First Name"
+                    placeholder="Nombre"
                     onChange={(e) => onFormUpdate("firstName", e.target.value)}
                   />
                 </Col>
@@ -72,7 +72,7 @@ export const Contact = () => {
                   <input
                     type="text"
                     value={formDetails.lastName}
-                    placeholder="Last Name"
+                    placeholder="Apellido"
                     onChange={(e) => onFormUpdate("lastName", e.target.value)}
                   />
                 </Col>
@@ -80,7 +80,7 @@ export const Contact = () => {
                   <input
                     type="email"
                     value={formDetails.email}
-                    placeholder="E-mail Address"
+                    placeholder="E-mail"
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </Col>
@@ -88,7 +88,7 @@ export const Contact = () => {
                   <input
                     type="tel"
                     value={formDetails.phone}
-                    placeholder="Tel Number"
+                    placeholder="Tel"
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </Col>
@@ -96,7 +96,7 @@ export const Contact = () => {
                   <textarea
                     row="6"
                     value={formDetails.message}
-                    placeholder="Message"
+                    placeholder="Mensaje"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
                   />
                   <button type="submit">

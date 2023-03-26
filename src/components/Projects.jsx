@@ -14,19 +14,19 @@ export const Projects = () => {
     {
       link: "https://github.com/Daniriatu/RickAndMorty.git",
       title: "Rick And Morty",
-      description: "A website about characters in the show",
+      description: "Una página web sobres los personajes en la serie",
       imgUrl: projImg1,
     },
     {
       link: "https://github.com/Daniriatu/PokemonGame.git",
       title: "Guess Pokemon Game",
-      description: "Come and see how much pokemons you know",
+      description: "Ven y descubrir cuántos pokémons conoces",
       imgUrl: projImg2,
     },
     {
       link: "https://github.com/Daniriatu/Small-Blog.git",
       title: "Personal Blog",
-      description: "A blog system made with Vue and Express",
+      description: "Un sistema blog construido con Vue y Express",
       imgUrl: projImg3,
     },
   ];
@@ -43,11 +43,10 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__bounce" : ""
                   }
                 >
-                  <h2>About Me</h2>
+                  <h2>Sobre mí</h2>
                   <p>
-                    Want to get more information and know me better? Stay here
-                    and make some clicks, maybe you can find something
-                    interesting.
+                    Quieres conocerme mejor? Quédate aquí y haz unos clicks, a
+                    lo mejor encontrarás algo que te interesa.
                   </p>
                 </div>
               )}
@@ -59,13 +58,13 @@ export const Projects = () => {
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Works</Nav.Link>
+                  <Nav.Link eventKey="first">Proyectos</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Education</Nav.Link>
+                  <Nav.Link eventKey="second">Educación</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Languages</Nav.Link>
+                  <Nav.Link eventKey="third">Idiomas</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>

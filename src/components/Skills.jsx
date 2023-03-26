@@ -38,10 +38,10 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-box">
-              <h2>Skills</h2>
+              <h2>Conocimientos</h2>
               <p>
-                Here are the 8 skills I'm familiar with, and I will keep adding
-                more into the list.
+                Aquí son las lenguajes y herramientas que domino bien, y voy a
+                seguir añadiendo más en esta lista.
               </p>
 
               <Carousel

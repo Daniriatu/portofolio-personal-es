@@ -51,7 +51,7 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("skills")}
             >
-              Skills
+              Conocimientos
             </Nav.Link>
             <Nav.Link
               href="#projects"
@@ -60,7 +60,7 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("projects")}
             >
-              About Me
+              Sobre mí
             </Nav.Link>
           </Nav>
 
@@ -80,7 +80,7 @@ export const NavBar = () => {
               >
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="#">
+              <a href="https://meetrongji.netlify.app/">
                 <img src={language} alt="" />
               </a>
             </div>

@@ -9,9 +9,9 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
-    "A Frontend Engineer",
-    "A Game Developer",
-    "And A Reliable Friend",
+    "Soy desarrollador Frontend.",
+    "Soy desarrollador de videojuego.",
+    "Soy un amigo confiable.",
   ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
@@ -62,16 +62,17 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="tagline">Bienvenid@ a Mi Portfolio</span>
                   <h1>
-                    {`Hi! I'm Rongji. `} <span className="wrap">{text}</span>
+                    {`¡Hola! Soy Rongji. `} <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    I´m a person who´s passionate about the tech world.
-                    <br></br>I´m always open to explore new technology and new
-                    field.
+                    Amo el mundo de las tecnologías.
+                    <br></br>Siempre quiero aprender y explorar tecnologías
+                    nuevas y campos nuevos.
                     <br></br>
-                    Technology changed the world, non-stop learning changed me.
+                    La tecnología ha cambiado el mundo, el aprendizaje sin parar
+                    me ha cambiado a mí.
                   </p>
                   <a href="#connect" style={{ textDecoration: "none" }}>
                     <button onClick={() => console.log("connect")}>
