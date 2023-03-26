@@ -80,7 +80,7 @@ export const NavBar = () => {
               >
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="https://meetrongji.netlify.app/">
+              <a href="https://meetrongji-en.netlify.app/">
                 <img src={language} alt="" />
               </a>
             </div>
