@@ -5,18 +5,18 @@ export const Education = ({ date, logo, career }) => {
     {
       date: "09/22 - Current",
       logo: upv,
-      career: "Máster Degree in Interactive Technology and Digital Fabrication",
+      career: "Máster en Tecnologías Interactivas y Fabricación Digital",
     },
     {
       date: "10/2019 - Current",
       logo: upv,
       career:
-        "Doctor Degree in Languages, Literatures, Cultures and Their Applications",
+        "Programa de Doctorado en Lenguas, Literaturas y Culturas, y sus Aplicaciones",
     },
     {
       date: "09/2018 - 09/2019",
       logo: upv,
-      career: "Master Degree in Languages and Technology",
+      career: "Máster en Lenguas y Tecnología",
     },
   ];
 
