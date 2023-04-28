@@ -44,10 +44,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Sobre mí</h2>
-                  <p>
-                    Quieres conocerme mejor? Quédate aquí y haz unos clicks, a
-                    lo mejor encontrarás algo que te interesa.
-                  </p>
+                  <p>¿Quieres conocerme mejor? Quédate y haz click aquí.</p>
                 </div>
               )}
             </TrackVisibility>

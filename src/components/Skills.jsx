@@ -38,11 +38,8 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-box">
-              <h2>Conocimientos</h2>
-              <p>
-                Aquí son las lenguajes y herramientas que domino bien, y voy a
-                seguir añadiendo más en esta lista.
-              </p>
+              <h2>Habilidades</h2>
+              <p>Lenguajes y herramientas que domino.</p>
 
               <Carousel
                 responsive={responsive}

@@ -71,7 +71,7 @@ export const Banner = () => {
                     <br></br>Siempre quiero aprender y explorar tecnologías
                     nuevas y campos nuevos.
                     <br></br>
-                    La tecnología ha cambiado el mundo, el aprendizaje sin parar
+                    La tecnología ha cambiado el mundo, el aprendizaje contínuo
                     me ha cambiado a mí.
                   </p>
                   <a href="#connect" style={{ textDecoration: "none" }}>
